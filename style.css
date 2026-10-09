@@ -1,0 +1,1042 @@
+
+/* ==============================
+   GENERAL
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ==============================
+   NAVBAR
+================================= */
+
+.navbar {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 7%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #1646a0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1646a0;
+}
+
+.register-btn {
+    background: #1646a0;
+    color: white !important;
+    padding: 9px 18px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.register-btn:hover {
+    background: #0d3278;
+}
+
+.login-btn {
+    color: #1646a0 !important;
+    border: 2px solid #1646a0;
+    padding: 9px 19px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #1646a0;
+    color: white !important;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+
+/* ==============================
+   HERO
+================================= */
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 7%;
+    background: linear-gradient(135deg, #1646a0, #6a35c8);
+    color: white;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 7px;
+    font-weight: bold;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: white;
+    color: #1646a0;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    border: 2px solid white;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background: white;
+    color: #1646a0;
+}
+
+
+/* ==============================
+   SECTION TITLES
+================================= */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    color: #1646a0;
+}
+
+.section-title p {
+    color: #666;
+}
+
+
+/* ==============================
+   ABOUT
+================================= */
+
+.about {
+    padding: 80px 7%;
+    background: white;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.about-card {
+    padding: 30px;
+    background: #f5f7fb;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-card h3 {
+    color: #1646a0;
+    margin-bottom: 12px;
+}
+
+
+/* ==============================
+   COURSES
+================================= */
+
+.courses {
+    padding: 80px 7%;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.course-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card h3 {
+    color: #1646a0;
+    margin-bottom: 10px;
+}
+
+.course-card a {
+    display: inline-block;
+    margin-top: 15px;
+    background: #1646a0;
+    color: white;
+    padding: 9px 15px;
+    border-radius: 6px;
+}
+
+.course-card a:hover {
+    background: #0d3278;
+}
+
+
+/* ==============================
+   CTA
+================================= */
+
+.cta {
+    padding: 70px 7%;
+    text-align: center;
+    background: #1646a0;
+    color: white;
+}
+
+.cta h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+}
+
+
+/* ==============================
+   CONTACT
+================================= */
+
+.contact {
+    padding: 80px 7%;
+    background: white;
+}
+
+.contact-form {
+    max-width: 650px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.contact-form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 13px;
+    background: #1646a0;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* ==============================
+   FOOTER
+================================= */
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* ==============================
+   REGISTRATION PAGE
+================================= */
+
+.registration-section {
+    padding: 60px 7%;
+    min-height: 100vh;
+}
+
+.registration-container {
+    max-width: 950px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.registration-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.registration-header h1 {
+    color: #1646a0;
+    margin-bottom: 8px;
+}
+
+.registration-header p {
+    color: #666;
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-section h2 {
+    color: #1646a0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1646a0;
+    padding-bottom: 8px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #1646a0;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.terms {
+    margin: 20px 0;
+}
+
+.terms input {
+    margin-right: 8px;
+}
+
+.submit-registration {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: #1646a0;
+    color: white;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-registration:hover {
+    background: #0d3278;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #1646a0;
+    font-weight: bold;
+}
+
+.back-home {
+    margin-bottom: 25px;
+}
+
+.back-home a {
+    color: #1646a0;
+    font-weight: bold;
+}
+
+.back-home a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   LOGIN PAGE
+================================= */
+
+.login-section {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #eef3ff, #f8f2ff);
+}
+
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.login-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #1646a0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header h1 {
+    color: #1646a0;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.login-header p {
+    color: #666;
+}
+
+.login-group {
+    margin-bottom: 20px;
+}
+
+.login-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-group input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.login-group input:focus {
+    border-color: #1646a0;
+    box-shadow: 0 0 0 3px rgba(22, 70, 160, 0.1);
+}
+
+
+/* Password */
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    padding-right: 75px;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: #1646a0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Remember + Forgot Password */
+
+.remember-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 25px;
+    font-size: 14px;
+}
+
+.remember-row label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.remember-row a {
+    color: #1646a0;
+    font-weight: bold;
+}
+
+.remember-row a:hover {
+    text-decoration: underline;
+}
+
+
+/* Login Button */
+
+.login-submit {
+    width: 100%;
+    padding: 14px;
+    background: #1646a0;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-submit:hover {
+    background: #0d3278;
+    transform: translateY(-1px);
+}
+
+
+/* Create Account */
+
+.create-account {
+    text-align: center;
+    margin-top: 25px;
+    color: #555;
+}
+
+.create-account a {
+    color: #1646a0;
+    font-weight: bold;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+}
+
+
+/* Back Home */
+
+.login-home {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.login-home a {
+    color: #555;
+    font-weight: bold;
+}
+
+.login-home a:hover {
+    color: #1646a0;
+}
+
+
+/* ==============================
+   MOBILE
+================================= */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .course-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .course-container {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .registration-container {
+        padding: 25px 20px;
+    }
+
+    .login-container {
+        padding: 30px 22px;
+    }
+
+    .login-header h1 {
+        font-size: 27px;
+    }
+
+    .remember-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
+
+
+
+/* MOBILE NAVIGATION FIX */
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 26px;
+    background: transparent;
+    border: none;
+    color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .menu-btn {
+        display: block;
+        margin-left: auto;
+        z-index: 1001;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        width: 100%;
+        padding: 20px;
+        margin-top: 12px;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        list-style: none;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 10px 12px;
+    }
+}
+
+/* ==================================
+   GLOBAL BACKGROUND COLORS
+   COLLEGE REGISTRATION SYSTEM
+================================== */
+
+body {
+    background: linear-gradient(
+        135deg,
+        #e0f2fe,
+        #ede9fe,
+        #fce7f3
+    );
+    background-attachment: fixed;
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+/* HEADER AND NAVIGATION */
+header {
+    background: rgba(255, 255, 255, 0.96);
+}
+
+/* MAIN SECTIONS */
+.about,
+.courses,
+.contact {
+    background: transparent;
+}
+
+/* INFORMATION CARDS */
+.about-card,
+.course-card,
+.contact-info,
+.contact form {
+    background: rgba(255, 255, 255, 0.94);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(30, 41, 59, 0.08);
+}
+
+/* HERO BACKGROUND */
+.hero {
+    background: linear-gradient(
+        135deg,
+        #1d4ed8,
+        #7c3aed,
+        #db2777
+    );
+    color: #ffffff;
+}
+
+/* CALL TO ACTION */
+.cta {
+    background: linear-gradient(
+        135deg,
+        #4338ca,
+        #7e22ce,
+        #be185d
+    );
+    color: #ffffff;
+}
+
+/* FORM INPUTS */
+input,
+textarea,
+select {
+    background: #ffffff;
+    color: #1e293b;
+    border: 1px solid #cbd5e1;
+}
+
+/* BUTTON COLORS */
+.primary-btn,
+.register-btn,
+.cta-btn {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+    color: #ffffff;
+}
+
+/* BUTTON HOVER EFFECT */
+.primary-btn:hover,
+.register-btn:hover,
+.cta-btn:hover {
+    background: linear-gradient(
+        135deg,
+        #1d4ed8,
+        #6d28d9
+    );
+}
+
+/* FOOTER */
+footer {
+    background: #172554;
+    color: #ffffff;
+}
+
+footer a {
+    color: #93c5fd;
+}
+
+/* ADMIN PAGE CARDS AND TABLES */
+.admin-card,
+.stat-card,
+.dashboard-card,
+.settings-card,
+.profile-card {
+    background: rgba(255, 255, 255, 0.96);
+    color: #1e293b;
+    border-radius: 12px;
+}
+
+/* MOBILE MENU BACKGROUND */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        background: #ffffff;
+    }
+}
+
+
+
+/* ==================================
+   COLLEGE PORTAL BUTTON DESIGN
+================================== */
+
+button,
+.primary-btn,
+.secondary-btn,
+.login-btn,
+.register-btn,
+.cta-btn,
+.action-button {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed,
+        #db2777
+    );
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* BUTTON HOVER */
+button:hover,
+.primary-btn:hover,
+.secondary-btn:hover,
+.login-btn:hover,
+.register-btn:hover,
+.cta-btn:hover,
+.action-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(124, 58, 237, 0.25);
+}
+
+/* KEEP LINKS FROM LOOKING LIKE BUTTONS */
+a {
+    text-decoration: none;
+}
+
+/* MOBILE BUTTONS */
+@media screen and (max-width: 768px) {
+    button,
+    .primary-btn,
+    .secondary-btn,
+    .login-btn,
+    .register-btn,
+    .cta-btn,
+    .action-button {
+        max-width: 100%;
+    }
+}
+
+/* ==================================
+   PROFESSIONAL CARDS AND FORMS
+================================== */
+
+/* CARDS */
+.about-card,
+.course-card,
+.stat-card,
+.admin-card,
+.dashboard-card,
+.contact-info,
+.contact-container form {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(124, 58, 237, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(30, 41, 59, 0.10);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* CARD HOVER */
+.about-card:hover,
+.course-card:hover,
+.stat-card:hover,
+.admin-card:hover,
+.dashboard-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(30, 41, 59, 0.15);
+}
+
+/* INPUT FIELDS */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #1e293b;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* INPUT FOCUS */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.13);
+}
+
+/* SECTION HEADINGS */
+.section-title h2 {
+    color: #312e81;
+}
+
+/* TABLES */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #4338ca;
+    color: #ffffff;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+}
+
+/* MOBILE TABLES */
+@media screen and (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

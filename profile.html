@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Profile | College Portal</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .admin-page {
+            min-height: 100vh;
+            padding: 40px 7%;
+            background: #f5f7fb;
+        }
+
+        .back-dashboard {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #1646a0;
+            font-weight: bold;
+        }
+
+        .page-header {
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            color: white;
+            background: linear-gradient(135deg, #1646a0, #6a35c8);
+        }
+
+        .profile-container {
+            max-width: 650px;
+            margin: auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .profile-avatar {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #1646a0;
+            color: white;
+            font-size: 45px;
+        }
+
+        .profile-container h2 {
+            text-align: center;
+            color: #1646a0;
+            margin-bottom: 25px;
+        }
+
+        .profile-group {
+            margin-bottom: 20px;
+        }
+
+        .profile-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .profile-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+        }
+
+        .profile-save {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 7px;
+            background: #1646a0;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .profile-save:hover {
+            background: #0d3278;
+        }
+
+        .profile-note {
+            margin-top: 18px;
+            color: #666;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .admin-page {
+                padding: 30px 5%;
+            }
+
+            .profile-container {
+                padding: 22px;
+            }
+        }
+
+ body {
+    background: linear-gradient(
+        135deg,
+        #e0f2fe,
+        #ede9fe,
+        #fce7f3
+    );
+    background-attachment: fixed;
+}       
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🎓 College Portal</div>
+
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="students.html">Students</a></li>
+        </ul>
+
+        <div class="menu-btn" id="menuBtn">☰</div>
+    </nav>
+
+    <main class="admin-page">
+
+        <a href="dashboard.html" class="back-dashboard">
+            ← Back to Admin Dashboard
+        </a>
+
+        <header class="page-header">
+            <h1>Admin Profile</h1>
+            <p>View and update your administrator information.</p>
+        </header>
+
+        <section class="profile-container">
+
+            <div class="profile-avatar">👤</div>
+
+            <h2>Administrator Information</h2>
+
+            <form id="profileForm">
+
+                <div class="profile-group">
+                    <label for="adminName">Full Name</label>
+                    <input
+                        type="text"
+                        id="adminName"
+                        value="College Administrator"
+                        required
+                    >
+                </div>
+
+                <div class="profile-group">
+                    <label for="adminEmail">Email Address</label>
+                    <input
+                        type="email"
+                        id="adminEmail"
+                        placeholder="admin@example.com"
+                        required
+                    >
+                </div>
+
+                <div class="profile-group">
+                    <label for="adminUsername">Username</label>
+                    <input
+                        type="text"
+                        id="adminUsername"
+                        value="admin"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="profile-save">
+                    Save Profile
+                </button>
+
+            </form>
+
+            <p class="profile-note">
+                This is a front-end demonstration. Profile changes will
+                not be permanently saved until the backend is connected.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 College Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+
+    <script>
+        document.getElementById("profileForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Profile form tested successfully. Permanent saving will be connected later.");
+        });
+    </script>
+
+</body>
+</html>

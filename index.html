@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <span>🎓</span>
+                College Portal
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <li>
+                    <a href="login.php" class="login-btn">
+                        Student Login
+                    </a>
+                </li>
+
+                <li>
+                    <a href="register.php" class="register-btn">
+                        Register
+                    </a>
+                </li>
+
+                <!-- ADMIN LOGIN -->
+                <li>
+                    <a href="admin/login.php" class="login-btn">
+                        Admin
+                    </a>
+                </li>
+            </ul>
+
+            <button class="menu-btn" id="menuBtn" type="button">
+                ☰
+            </button>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+
+            <p class="welcome">WELCOME TO OUR COLLEGE</p>
+
+            <h1>
+                Start Your
+                <span>Future Today</span>
+            </h1>
+
+            <p class="hero-text">
+                Register for your preferred course and begin
+                your journey toward a successful career.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="register.php" class="primary-btn">
+                    Apply Now
+                </a>
+
+                <a href="login.php" class="secondary-btn">
+                    Student Login
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <div class="section-title">
+            <p>ABOUT US</p>
+            <h2>Building Tomorrow's Professionals</h2>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-card">
+                <div class="icon">🎓</div>
+                <h3>Quality Education</h3>
+                <p>
+                    We provide quality education designed
+                    to prepare students for the modern world.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <div class="icon">👨‍🏫</div>
+                <h3>Experienced Teachers</h3>
+                <p>
+                    Learn from dedicated instructors with
+                    practical knowledge and experience.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <div class="icon">💻</div>
+                <h3>Modern Learning</h3>
+                <p>
+                    Access modern learning resources and
+                    technology to improve your skills.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- COURSES -->
+    <section class="courses" id="courses">
+
+        <div class="section-title">
+            <p>OUR COURSES</p>
+            <h2>Choose Your Career Path</h2>
+        </div>
+
+        <div class="course-container">
+
+            <div class="course-card">
+                <div class="course-icon">💻</div>
+                <h3>Computer Programming</h3>
+                <p>
+                    Learn programming, web development,
+                    databases and software development.
+                </p>
+                <a href="register.php">Register Now →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">🌐</div>
+                <h3>Web Development</h3>
+                <p>
+                    Learn HTML, CSS, JavaScript, PHP
+                    and modern web development.
+                </p>
+                <a href="register.php">Register Now →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">📱</div>
+                <h3>Mobile App Development</h3>
+                <p>
+                    Learn how to design and develop
+                    applications for mobile devices.
+                </p>
+                <a href="register.php">Register Now →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">🤖</div>
+                <h3>Artificial Intelligence</h3>
+                <p>
+                    Explore artificial intelligence,
+                    machine learning and intelligent applications.
+                </p>
+                <a href="register.php">Register Now →</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CALL TO ACTION -->
+    <section class="cta">
+        <div>
+            <h2>Ready to Start Your Journey?</h2>
+            <p>
+                Register today and take the first step
+                toward your future career.
+            </p>
+        </div>
+
+        <a href="register.php" class="cta-btn">
+            Register Now
+        </a>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <div class="section-title">
+            <p>CONTACT US</p>
+            <h2>Get In Touch</h2>
+        </div>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h3>College Registration Office</h3>
+                <p>📍 College Campus</p>
+                <p>📞 +254 700 000 000</p>
+                <p>📧 info@collegeportal.com</p>
+            </div>
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <textarea
+                    id="message"
+                    placeholder="Your Message"
+                    rows="5"
+                    required
+                ></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+
+            <h3>🎓 College Portal</h3>
+            <p>Your future starts here.</p>
+
+            <p>
+                <a href="admin/login.php">
+                    Admin Login
+                </a>
+            </p>
+
+            <p class="copyright">
+                © 2026 College Registration System.
+                All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

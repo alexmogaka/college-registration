@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Registrations | College Portal</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .admin-page {
+            min-height: 100vh;
+            padding: 40px 7%;
+            background: #f5f7fb;
+        }
+
+        .back-dashboard {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #1646a0;
+            font-weight: bold;
+        }
+
+        .page-header {
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            color: white;
+            background: linear-gradient(135deg, #1646a0, #6a35c8);
+        }
+
+        .registrations-container {
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            overflow-x: auto;
+        }
+
+        .registrations-container h2 {
+            color: #1646a0;
+            margin-bottom: 20px;
+        }
+
+        .registration-table {
+            width: 100%;
+            min-width: 700px;
+            border-collapse: collapse;
+        }
+
+        .registration-table th,
+        .registration-table td {
+            padding: 14px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .registration-table th {
+            background: #1646a0;
+            color: white;
+        }
+
+        .empty-message {
+            text-align: center !important;
+            padding: 30px !important;
+            color: #777;
+        }
+
+        .status-pending {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #fff3cd;
+            color: #856404;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            .admin-page {
+                padding: 30px 5%;
+            }
+        }
+
+body {
+    background: linear-gradient(
+        135deg,
+        #e0f2fe,
+        #ede9fe,
+        #fce7f3
+    );
+    background-attachment: fixed;
+}        
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🎓 College Portal</div>
+
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="students.html">Manage Students</a></li>
+            <li><a href="courses.html">Manage Courses</a></li>
+        </ul>
+
+        <div class="menu-btn" id="menuBtn">☰</div>
+    </nav>
+
+    <main class="admin-page">
+
+        <a href="dashboard.html" class="back-dashboard">
+            ← Back to Admin Dashboard
+        </a>
+
+        <div class="page-header">
+            <h1>Student Registrations</h1>
+            <p>Review applications submitted to the college.</p>
+        </div>
+
+        <section class="registrations-container">
+            <h2>Registration Applications</h2>
+
+            <table class="registration-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Student Name</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                        <th>Date Applied</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td colspan="6" class="empty-message">
+                            No applications available yet.
+                            Registered applications will appear here
+                            after we connect the database.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 College Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>

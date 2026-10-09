@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | College Portal</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* Admin Dashboard */
+
+        .admin-dashboard {
+            min-height: 100vh;
+            background: #f5f7fb;
+            padding: 50px 7%;
+        }
+
+        .admin-header {
+            background: linear-gradient(135deg, #1646a0, #6a35c8);
+            color: white;
+            padding: 35px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        .admin-header h1 {
+            margin-bottom: 8px;
+        }
+
+        .admin-header p {
+            opacity: 0.9;
+        }
+
+        .dashboard-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 35px;
+        }
+
+        .dashboard-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .dashboard-card .icon {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .dashboard-card h3 {
+            color: #555;
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        .dashboard-card .number {
+            font-size: 30px;
+            font-weight: bold;
+            color: #1646a0;
+        }
+
+        .admin-actions {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .admin-actions h2 {
+            color: #1646a0;
+            margin-bottom: 20px;
+        }
+
+        .action-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .action-button {
+            display: block;
+            padding: 18px;
+            background: #f5f7fb;
+            border: 2px solid #e2e6ef;
+            border-radius: 8px;
+            color: #1646a0;
+            font-weight: bold;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .action-button:hover {
+            background: #1646a0;
+            color: white;
+            border-color: #1646a0;
+        }
+
+        .logout-button {
+            display: inline-block;
+            margin-top: 25px;
+            background: #dc3545;
+            color: white;
+            padding: 11px 20px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .logout-button:hover {
+            background: #b02a37;
+        }
+
+        @media (max-width: 900px) {
+
+            .dashboard-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .action-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .admin-dashboard {
+                padding: 30px 5%;
+            }
+
+            .dashboard-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .action-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .admin-header {
+                padding: 25px;
+            }
+        }
+
+body {
+    background: linear-gradient(
+        135deg,
+        #e0f2fe,
+        #ede9fe,
+        #fce7f3
+    );
+    background-attachment: fixed;
+}        
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🎓 College Portal
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="../register.html">Student Registration</a>
+            </li>
+
+            <li>
+                <a href="../login.html">Student Login</a>
+            </li>
+
+        </ul>
+
+        <div class="menu-btn" id="menuBtn">
+            ☰
+        </div>
+
+    </nav>
+
+
+    <!-- Dashboard -->
+    <main class="admin-dashboard">
+
+        <div class="admin-header">
+
+            <h1>Admin Dashboard</h1>
+
+            <p>
+                Welcome to the College Portal administration system.
+            </p>
+
+        </div>
+
+
+        <!-- Statistics -->
+        <div class="dashboard-cards">
+
+            <div class="dashboard-card">
+
+                <div class="icon">
+                    👨‍🎓
+                </div>
+
+                <h3>
+                    Total Students
+                </h3>
+
+                <div class="number">
+                    0
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="icon">
+                    📚
+                </div>
+
+                <h3>
+                    Total Courses
+                </h3>
+
+                <div class="number">
+                    0
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="icon">
+                    📝
+                </div>
+
+                <h3>
+                    Registrations
+                </h3>
+
+                <div class="number">
+                    0
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="icon">
+                    ⏳
+                </div>
+
+                <h3>
+                    Pending Applications
+                </h3>
+
+                <div class="number">
+                    0
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Admin Actions -->
+        <div class="admin-actions">
+
+            <h2>
+                Administration
+            </h2>
+
+            <div class="action-grid">
+
+                <a href="students.html" class="action-button">
+   
+                    👨‍🎓 Manage Students
+                </a>
+                <a href="courses.html" class="action-button">
+                    📚 Manage Courses
+                </a>
+
+               <a href="registrations.html" class="action-button">
+                    📝 View Registrations
+                </a>
+
+  <a href="reports.html" class="action-button">
+    📊 Reports
+</a>
+
+                <a href="settings.html" class="action-button">
+                    ⚙️ Settings
+                </a>
+
+
+<a href="profile.html" class="action-button">
+    👤 Admin Profile
+</a>
+
+            </div>
+
+
+            <a href="login.html" class="logout-button">
+                🚪 Logout
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 College Portal. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="../script.js"></script>
+
+</body>
+</html>

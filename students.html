@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Students | College Portal</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .admin-page {
+            min-height: 100vh;
+            background: #f5f7fb;
+            padding: 50px 7%;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #1646a0, #6a35c8);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .page-header h1 {
+            margin-bottom: 8px;
+        }
+
+        .back-dashboard {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #1646a0;
+            font-weight: bold;
+        }
+
+        .students-container {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            overflow-x: auto;
+        }
+
+        .students-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 15px;
+        }
+
+        .students-top h2 {
+            color: #1646a0;
+        }
+
+        .add-student {
+            background: #1646a0;
+            color: white;
+            padding: 11px 18px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .add-student:hover {
+            background: #0d3278;
+        }
+
+        .students-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 750px;
+        }
+
+        .students-table th,
+        .students-table td {
+            padding: 13px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .students-table th {
+            background: #1646a0;
+            color: white;
+        }
+
+        .students-table tr:hover {
+            background: #f5f7fb;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 20px;
+            background: #fff3cd;
+            color: #856404;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .empty-message {
+            text-align: center;
+            padding: 35px;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .admin-page {
+                padding: 30px 5%;
+            }
+
+            .students-top {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+body {
+    background: linear-gradient(
+        135deg,
+        #e0f2fe,
+        #ede9fe,
+        #fce7f3
+    );
+    background-attachment: fixed;
+}        
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🎓 College Portal
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="dashboard.html">Dashboard</a>
+            </li>
+
+            <li>
+                <a href="../login.html">Student Login</a>
+            </li>
+
+        </ul>
+
+        <div class="menu-btn" id="menuBtn">
+            ☰
+        </div>
+
+    </nav>
+
+
+    <!-- Students Page -->
+    <main class="admin-page">
+
+        <a href="dashboard.html" class="back-dashboard">
+            ← Back to Admin Dashboard
+        </a>
+
+
+        <div class="page-header">
+
+            <h1>Manage Students</h1>
+
+            <p>
+                View and manage students registered in the college.
+            </p>
+
+        </div>
+
+
+        <div class="students-container">
+
+            <div class="students-top">
+
+                <h2>Registered Students</h2>
+
+                <a href="#" class="add-student">
+                    + Add Student
+                </a>
+
+            </div>
+
+
+            <table class="students-table">
+
+                <thead>
+
+                    <tr>
+                        <th>#</th>
+                        <th>Student Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Course</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td colspan="6" class="empty-message">
+                            No students registered yet.
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 College Portal. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="../script.js"></script>
+
+</body>
+</html>

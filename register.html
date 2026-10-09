@@ -1,0 +1,513 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration | College Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================================
+     NAVIGATION
+================================ -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span>🎓</span>
+            College Portal
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="index.html#about">About</a>
+            </li>
+
+            <li>
+                <a href="index.html#courses">Courses</a>
+            </li>
+
+            <li>
+                <a href="index.html#contact">Contact</a>
+            </li>
+
+            <li>
+                <a href="register.html"
+                   class="register-btn">
+                    Register
+                </a>
+            </li>
+
+        </ul>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================================
+     REGISTRATION
+================================ -->
+
+<section class="registration-section">
+
+
+    <div class="registration-container">
+
+
+        <!-- TITLE -->
+
+        <div class="registration-header">
+
+            <p>STUDENT REGISTRATION</p>
+
+            <h1>
+                Create Your Student Account
+            </h1>
+
+            <span>
+                Fill in the information below to begin
+                your college application.
+            </span>
+
+        </div>
+
+
+
+        <!-- FORM -->
+
+        <form id="registrationForm">
+
+
+            <!-- PERSONAL INFORMATION -->
+
+            <div class="form-section">
+
+                <h2>
+                    👤 Personal Information
+                </h2>
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label for="firstName">
+                            First Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            placeholder="Enter your first name"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="lastName">
+                            Last Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            placeholder="Enter your last name"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+254 700 000 000"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="gender">
+                            Gender
+                        </label>
+
+                        <select
+                            id="gender"
+                            name="gender"
+                            required
+                        >
+
+                            <option value="">
+                                Select Gender
+                            </option>
+
+                            <option value="Male">
+                                Male
+                            </option>
+
+                            <option value="Female">
+                                Female
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="dob">
+                            Date of Birth
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dob"
+                            name="dob"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ACADEMIC INFORMATION -->
+
+            <div class="form-section">
+
+                <h2>
+                    🎓 Academic Information
+                </h2>
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label for="course">
+                            Select Course
+                        </label>
+
+                        <select
+                            id="course"
+                            name="course"
+                            required
+                        >
+
+                            <option value="">
+                                Select a Course
+                            </option>
+
+                            <option value="Computer Programming">
+                                Computer Programming
+                            </option>
+
+                            <option value="Web Development">
+                                Web Development
+                            </option>
+
+                            <option value="Mobile App Development">
+                                Mobile App Development
+                            </option>
+
+                            <option value="Artificial Intelligence">
+                                Artificial Intelligence
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="education">
+                            Highest Education
+                        </label>
+
+                        <select
+                            id="education"
+                            name="education"
+                            required
+                        >
+
+                            <option value="">
+                                Select Education Level
+                            </option>
+
+                            <option value="KCSE">
+                                KCSE
+                            </option>
+
+                            <option value="Certificate">
+                                Certificate
+                            </option>
+
+                            <option value="Diploma">
+                                Diploma
+                            </option>
+
+                            <option value="Degree">
+                                Degree
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="form-group full-width">
+
+                        <label for="school">
+                            Previous School
+                        </label>
+
+                        <input
+                            type="text"
+                            id="school"
+                            name="school"
+                            placeholder="Enter your previous school"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ACCOUNT INFORMATION -->
+
+            <div class="form-section">
+
+                <h2>
+                    🔐 Account Information
+                </h2>
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label for="username">
+                            Username
+                        </label>
+
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            placeholder="Create a username"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a password"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Confirm your password"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TERMS -->
+
+            <div class="terms">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        required
+                    >
+
+                    I agree to the college
+                    <a href="#">
+                        terms and conditions
+                    </a>.
+
+                </label>
+
+            </div>
+
+
+
+            <!-- BUTTON -->
+
+            <button
+                type="submit"
+                class="submit-registration"
+            >
+                Create Student Account
+            </button>
+
+
+            <p class="login-link">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login here
+                </a>
+
+            </p>
+
+
+        </form>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================================
+     FOOTER
+================================ -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h3>🎓 College Portal</h3>
+
+        <p>
+            Your future starts here.
+        </p>
+
+        <p class="copyright">
+            © 2026 College Registration System.
+            All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

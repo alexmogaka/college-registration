@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Courses | College Portal</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .admin-page {
+            min-height: 100vh;
+            background: #f5f7fb;
+            padding: 40px 7%;
+        }
+
+        .back-dashboard {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #1646a0;
+            font-weight: bold;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #1646a0, #6a35c8);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .courses-container {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            overflow-x: auto;
+        }
+
+        .courses-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .courses-top h2 {
+            color: #1646a0;
+        }
+
+        .add-course {
+            background: #1646a0;
+            color: white;
+            padding: 11px 17px;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .course-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+
+        .course-table th,
+        .course-table td {
+            padding: 14px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .course-table th {
+            background: #1646a0;
+            color: white;
+        }
+
+        .course-table tr:hover {
+            background: #f5f7fb;
+        }
+
+        .empty-message {
+            text-align: center;
+            padding: 30px;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .admin-page {
+                padding: 30px 5%;
+            }
+
+            .courses-top {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+        }
+        body {
+    background: linear-gradient(
+        135deg,
+        #e0f2fe,
+        #ede9fe,
+        #fce7f3
+    );
+    background-attachment: fixed;
+}
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🎓 College Portal</div>
+
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="../register.html">Student Registration</a></li>
+        </ul>
+
+        <div class="menu-btn" id="menuBtn">☰</div>
+    </nav>
+
+    <main class="admin-page">
+
+        <a href="dashboard.html" class="back-dashboard">
+            ← Back to Admin Dashboard
+        </a>
+
+        <div class="page-header">
+            <h1>Manage Courses</h1>
+            <p>View the courses offered by your college.</p>
+        </div>
+
+        <div class="courses-container">
+
+            <div class="courses-top">
+                <h2>Available Courses</h2>
+
+                <button
+                    type="button"
+                    class="add-course"
+                    onclick="alert('Adding and saving courses will be connected later.')">
+                    + Add Course
+                </button>
+            </div>
+
+            <table class="course-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Course Name</th>
+                        <th>Course Code</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Computer Programming</td>
+                        <td>CP101</td>
+                        <td>6 Months</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Web Development</td>
+                        <td>WD102</td>
+                        <td>6 Months</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Mobile App Development</td>
+                        <td>MA103</td>
+                        <td>8 Months</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Artificial Intelligence</td>
+                        <td>AI104</td>
+                        <td>12 Months</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 College Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>
